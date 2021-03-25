@@ -1,4 +1,4 @@
-### How to execute on [Playground](https://play.onflow.org/b60aa97d-d030-476e-9490-24f3a6f90161)
+## How to execute on [Playground](https://play.onflow.org/b60aa97d-d030-476e-9490-24f3a6f90161)
 
 1. Deploy ./contracts/NFT.cdc at "0x02" tab
 2. Deploy ./transactions/Mint.cdc at "Mint NFT" tab
@@ -8,7 +8,19 @@
 
 
 
-### Script Results
+## Transaction Results
+
+```
+// Deploy Transfer.cdc twice
+
+> unexpectedly found nil while forcing an Optional value
+
+// However, NFT(id: 1) still exists in 0x02's NFTCollection
+```
+
+
+
+## Script Results
 
 ```
 // Print 0x02 NFTs 
@@ -19,7 +31,7 @@
 
 
 
-### Storage Results
+## Storage Results
 
 - 0x01
 
