@@ -8,11 +8,11 @@ This repository is for Cadence smart contracts that define core functionality of
 
 ## 👽 Team Members
 
-Our team consists of 5 developers and 2 managers. Please contact us via [flow@gobeyond.ac](mailto:flow@gobeyond.ac?subject=[GitHub] Source Han Sans)
+Our team consists of 5 developers and 2 managers. Please contact us via flow@gobeyond.ac
 
 - Back-end: [Juyeon Lee](https://github.com/kwklly), [Hyunsun Yoo](https://github.com/sunny0529), [Suhyun Lee](https://github.com/2suh)
 - Front-end: [Yewon Bahn](https://github.com/yewonbahn), [Eunsoo Park](https://github.com/e06-tech)
-- Manager: [Kihun Yun](mailto:mrclo90@gobeyond.ac?subject=[GitHub] Source Han Sans), [Namhye Kim](mailto:agathakim43@gobeyond.ac?subject=[GitHub] Source Han Sans)
+- Manager: [Kihun Yun](mailto:mrclo90@gobeyond.ac?subject=[GitHub]%20Source%20Han%20Sans), [Namhye Kim](mailto:agathakim43@gobeyond.ac?subject=[GitHub]%20Source%20Han%20Sans)
 
 ## 🚩 Commit Message
 
