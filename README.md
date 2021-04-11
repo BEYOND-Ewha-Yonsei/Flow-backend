@@ -1,4 +1,4 @@
-# Flow-backend
+# Pixori-smart-contracts
 
 ## 🔍 Introduction
 
