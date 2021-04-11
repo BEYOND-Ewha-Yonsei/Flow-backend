@@ -2,7 +2,7 @@
 
 import Pixori from 0x05f5f6e2056f588b 
 
-transaction {
+transaction(address: Address) {
 
     let transferToken: @Pixori.NFT
     let getMetadataRef: {String: String}
@@ -18,7 +18,7 @@ transaction {
 
     execute {
 
-        let recipient = getAccount(0x01) // set "0x01" as a variable(recipient address)
+        let recipient = getAccount(address) // set "0x01" as a variable(recipient address)
 
         let receiverRef = recipient.getCapability<&{Pixori.NFTReceiver}>(/public/NFTReceiver)
             .borrow()
