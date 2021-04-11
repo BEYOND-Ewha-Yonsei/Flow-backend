@@ -1,6 +1,6 @@
 // flow scripts execute GetMetadata.cdc
 
-import Pixori from 0x02
+import Pixori from 0x05f5f6e2056f588b
 
 pub fun main() {
 

@@ -1,6 +1,6 @@
 // flow transactions send --code Transfer.cdc --signer admin-account
 
-import Pixori from 0x02 // set "0x02" as admin-account address
+import Pixori from 0x05f5f6e2056f588b 
 
 transaction {
 
