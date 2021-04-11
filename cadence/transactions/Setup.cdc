@@ -9,7 +9,7 @@ transaction {
         let collection <- Pixori.createEmptyCollection()
 
         acct.save<@Pixori.Collection>(<-collection, to: /storage/NFTCollection)
-        log("Collection created for account 1")
+        log("Collection created for Current user")
 
         acct.link<&{Pixori.NFTReceiver}>(/public/NFTReceiver, target: /storage/NFTCollection)
         log("Capability created")

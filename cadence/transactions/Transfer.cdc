@@ -25,7 +25,7 @@ transaction {
             ?? panic("Could not borrow receiver reference")
 
         receiverRef.deposit(token: <-self.transferToken, metadata: self.getMetadataRef)
-        log("NFT ID 1 transferred from account 2 to account 1")
+        log("NFT transferred from Admin account to Current-user account")
     }
 }
  

@@ -14,7 +14,7 @@ transaction {
             ?? panic("Could not borrow receiver reference")
         
         self.minterRef = acct.borrow<&Pixori.NFTMinter>(from: /storage/NFTMinter)
-            ?? panic("could not borrow minter reference")
+            ?? panic("Could not borrow minter reference")
     }
 
     execute {
@@ -29,6 +29,6 @@ transaction {
         }
         self.receiverRef.deposit(token: <-newNFT, metadata: metadata)
 
-        log("NFT Minted and deposited to Account 2's Collection")
+        log("NFT Minted and deposited to the Current user's Collection")
     }
 }

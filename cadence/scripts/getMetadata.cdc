@@ -7,8 +7,8 @@ pub fun main() {
     let nftOwner = getAccount(0x01)
     let capability = nftOwner.getCapability<&{Pixori.NFTReceiver}>(/public/NFTReceiver)
     let receiverRef = capability.borrow()
-        ?? panic("Could not borrow the receiver reference")
+        ?? panic("Could not borrow receiver reference")
 
-    log("Account 2 NFTs")
+    log("Current user's NFTs")
     log(receiverRef.getMetadata(id: 1)) // set "id" as a variable
 }
