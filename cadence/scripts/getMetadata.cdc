@@ -1,6 +1,6 @@
 // flow scripts execute GetMetadata.cdc
 
-import ExampleNFT from 0x02
+import Pixori from 0x02
 
 pub fun main() {
 

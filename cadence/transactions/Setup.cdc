@@ -1,6 +1,6 @@
 // flow transactions send --code Setup.cdc --signer user-account
 
-import ExampleNFT from 0x02 // set "0x02" as admin-account address
+import Pixori from 0x02 // set "0x02" as admin-account address
 
 transaction {
 

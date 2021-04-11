@@ -1,6 +1,6 @@
 // flow transactions send --code NFT.cdc --signer admin-account
 
-pub contract ExampleNFT {
+pub contract Pixori {
 
     pub resource NFT {
         pub let id: UInt64
