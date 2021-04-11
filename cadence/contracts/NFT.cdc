@@ -84,6 +84,12 @@ pub contract Pixori {
             return <-newNFT
         }
     }
+    
+    pub fun check(_ address: Address): Bool {
+      return getAccount(address)
+        .getCapability<&{Pixori.NFTReceiver}>(/public/NFTReceiver)
+        .check()
+    }
 
 	init() {
     
