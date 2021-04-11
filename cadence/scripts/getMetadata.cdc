@@ -5,7 +5,7 @@ import Pixori from 0x05f5f6e2056f588b
 pub fun main() {
 
     let nftOwner = getAccount(0x01)
-    let capability = nftOwner.getCapability<&{ExampleNFT.NFTReceiver}>(/public/NFTReceiver)
+    let capability = nftOwner.getCapability<&{Pixori.NFTReceiver}>(/public/NFTReceiver)
     let receiverRef = capability.borrow()
         ?? panic("Could not borrow the receiver reference")
 

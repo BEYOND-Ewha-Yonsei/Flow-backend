@@ -4,16 +4,16 @@ import Pixori from 0x05f5f6e2056f588b
 
 transaction {
 
-    let receiverRef: &{ExampleNFT.NFTReceiver}
-    let minterRef: &ExampleNFT.NFTMinter
+    let receiverRef: &{Pixori.NFTReceiver}
+    let minterRef: &Pixori.NFTMinter
 
     prepare(acct: AuthAccount) {
 
-        self.receiverRef = acct.getCapability<&{ExampleNFT.NFTReceiver}>(/public/NFTReceiver)
+        self.receiverRef = acct.getCapability<&{Pixori.NFTReceiver}>(/public/NFTReceiver)
             .borrow()
             ?? panic("Could not borrow receiver reference")
         
-        self.minterRef = acct.borrow<&ExampleNFT.NFTMinter>(from: /storage/NFTMinter)
+        self.minterRef = acct.borrow<&Pixori.NFTMinter>(from: /storage/NFTMinter)
             ?? panic("could not borrow minter reference")
     }
 

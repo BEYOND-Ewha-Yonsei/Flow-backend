@@ -4,12 +4,12 @@ import Pixori from 0x05f5f6e2056f588b
 
 transaction {
 
-    let transferToken: @ExampleNFT.NFT
+    let transferToken: @Pixori.NFT
     let getMetadataRef: {String: String}
 
     prepare(acct: AuthAccount) {
 
-        let collectionRef = acct.borrow<&ExampleNFT.Collection>(from: /storage/NFTCollection)
+        let collectionRef = acct.borrow<&Pixori.Collection>(from: /storage/NFTCollection)
             ?? panic("Could not borrow a reference to the owner's collection")
 
         self.transferToken <- collectionRef.withdraw(withdrawID: 1) // set "withdrawID" as a variable
@@ -20,7 +20,7 @@ transaction {
 
         let recipient = getAccount(0x01) // set "0x01" as a variable(recipient address)
 
-        let receiverRef = recipient.getCapability<&{ExampleNFT.NFTReceiver}>(/public/NFTReceiver)
+        let receiverRef = recipient.getCapability<&{Pixori.NFTReceiver}>(/public/NFTReceiver)
             .borrow()
             ?? panic("Could not borrow receiver reference")
 

@@ -6,12 +6,12 @@ transaction {
 
     prepare(acct: AuthAccount) {
 
-        let collection <- ExampleNFT.createEmptyCollection()
+        let collection <- Pixori.createEmptyCollection()
 
-        acct.save<@ExampleNFT.Collection>(<-collection, to: /storage/NFTCollection)
+        acct.save<@Pixori.Collection>(<-collection, to: /storage/NFTCollection)
         log("Collection created for account 1")
 
-        acct.link<&{ExampleNFT.NFTReceiver}>(/public/NFTReceiver, target: /storage/NFTCollection)
+        acct.link<&{Pixori.NFTReceiver}>(/public/NFTReceiver, target: /storage/NFTCollection)
         log("Capability created")
     }
 }
