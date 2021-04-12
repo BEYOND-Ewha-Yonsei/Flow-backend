@@ -15,5 +15,11 @@ pub fun main(address: Address) {
     // print one id respectively
     for id in allIDs {
         log(receiverRef.getMetadata(id: id))
+        // Script Results on Playground :
+        // > "Current user's NFTs"
+        // > {"name": "kwklly1", "time": "11:33 PM"}
+        // > {"name": "kwklly2", "time": "11:35 PM"}
+        // > Result > {"type":"Void"}
     }
+
 }
