@@ -3,6 +3,7 @@
 import Pixori from 0x05f5f6e2056f588b
 
 pub fun main(address: Address) {
+// pub fun main(address: Address): [{String: String}] {
 
     let nftOwner = getAccount(address)
     let capability = nftOwner.getCapability<&{Pixori.NFTReceiver}>(/public/NFTReceiver)
@@ -11,15 +12,15 @@ pub fun main(address: Address) {
 
     log("Current user's NFTs")
     let allIDs = receiverRef.getIDs()
+    // var allMetadata: [{String: String}] = []
 
-    // print one id respectively
+
     for id in allIDs {
         log(receiverRef.getMetadata(id: id))
-        // Script Results on Playground :
-        // > "Current user's NFTs"
-        // > {"name": "kwklly1", "time": "11:33 PM"}
-        // > {"name": "kwklly2", "time": "11:35 PM"}
-        // > Result > {"type":"Void"}
+        // delete the line above
+        // allMetadata[id] = receiverRef.getMetadata(id: id)
     }
+    // return allMetadata
+    // Error: GraphQL error: panic: runtime error: index out of range [1] with length 0
 
 }
