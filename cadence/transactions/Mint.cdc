@@ -3,6 +3,7 @@
 import Pixori from 0x05f5f6e2056f588b 
 
 transaction {
+// transaction(metadata: {String: String}) {
 
     let receiverRef: &{Pixori.NFTReceiver}
     let minterRef: &Pixori.NFTMinter
@@ -21,13 +22,14 @@ transaction {
 
         let newNFT <- self.minterRef.mintNFT()
 
-        // set "metadata" as a variable
+        // delete def. below
         let metadata: {String: String} = {
             "name": "example3",
             "time": "11:33 PM",
             "location": "home"
         }
         self.receiverRef.deposit(token: <-newNFT, metadata: metadata)
+        // Error: GraphQL error: failed to decode argument 0: failed to decode value: invalid JSON Cadence structure
 
         log("NFT Minted and deposited to the Current user's Collection")
     }
