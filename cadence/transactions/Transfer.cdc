@@ -1,4 +1,4 @@
-// flow transactions send --code Transfer.cdc --signer admin-account
+// flow transactions send Transfer.cdc --signer admin-account --host access.testnet.nodes.onflow.org:9000
 
 import Pixori from 0x05f5f6e2056f588b 
 

@@ -1,4 +1,4 @@
-// flow transactions send --code Setup.cdc --signer user-account
+// flow transactions send Setup.cdc --signer user-account 
 
 import Pixori from 0x05f5f6e2056f588b 
 
