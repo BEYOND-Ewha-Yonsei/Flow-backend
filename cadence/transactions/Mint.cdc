@@ -15,6 +15,9 @@ transaction(metadata: {String: String}) {
         
         self.minterRef = acct.borrow<&Pixori.NFTMinter>(from: /storage/NFTMinter)
             ?? panic("Could not borrow minter reference")
+
+        // log minted ID
+        log(self.minterRef.idCount) 
     }
 
     execute {
